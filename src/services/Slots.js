@@ -37,5 +37,9 @@ function getSlotsPerVaccineType(availableSlots) {
         console.error("Invalid vaccine type ", config.type);
         process.exit(1);
     }
+    if (config.type === "both") {
+        return availableSlots;
+    }
+
     return availableSlots.filter(item => lo.some(item.sessions, { vaccine: config.type }))
 }
