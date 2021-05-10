@@ -10,7 +10,7 @@
     "@babel/core": "^7.14.0",
     "@babel/node": "^7.13.13",
     "@babel/preset-env": "^7.14.1",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.2"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
