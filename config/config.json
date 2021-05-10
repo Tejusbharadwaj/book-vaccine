@@ -2,8 +2,9 @@
     "api": {
         "search": "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=294",
         "reschedule": "https://cdn-api.co-vin.in/api/v2/appointment/reschedule",
-        "schedule": "https://cdn-api.co-vin.in/api/v2/appointment/schedule"
+        "schedule": "https://cdn-api.co-vin.in/api/v2/appointment/schedule",
+        "beneficiaries": "https://cdn-api.co-vin.in/api/v2/appointment/beneficiaries"
     },
     "type": "both",
-    "age": 18
+    "age": 45
 }

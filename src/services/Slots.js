@@ -12,7 +12,7 @@ async function getVaccineCenters() {
         "Accept-Language": "hi_IN",
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
     };
-    const res = await (await getUrl(url, { headers: headers })).data;
+    const res = (await getUrl(url, { headers: headers })).data;
     return res
 }
 
