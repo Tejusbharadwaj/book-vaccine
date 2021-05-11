@@ -1,7 +1,10 @@
 import { getAllAvailbleVaccine } from "./src/services/Slots.js";
 import { scheduleMaxAvailableSlot } from "./src/services/Schedule.js";
+import { login, getToken } from "./src/services/Auth.js"
 
 (async function great() {
+    // const txnId = await login();
+    // const token = await getToken("123", txnId)
     const slots = await getAllAvailbleVaccine()
     if (slots.length !== 0) {
         console.log(slots);
@@ -12,6 +15,7 @@ import { scheduleMaxAvailableSlot } from "./src/services/Schedule.js";
             console.log("Appointment bookes successfully!! Appointment Id = ", res.appointment_id);
 
         }
+        console.log(slots[0].pincode);
         // return (
         //     <div className="">
         //         {slots.map((slotItem) => (
